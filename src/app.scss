@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:700|Noto%20Sans%20NKo:400');
 
 
+$themes: (
+ light: (
+   text: #09051d,
+   background: #f1effc,
+   primary: #5432dc,
+   secondary: #e8ae92,
+   accent: #e2538a,
+ ),
+ dark: (
+   text: #e5e0fa,
+   background: #050311,
+   primary: #4523cd,
+   secondary: #6d3417,
+   accent: #aa1d53,
+ ),
+);
+
+
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -50,8 +68,11 @@ small {
 }
 
 body{
-  background-color: #f1effc;
-  color: #09051d;
+/*  background-color: #f1effc;
+  color: #09051d;*/
+  background-color: map-get($themes, light, background);
+  color: map-get($themes, light, text);
+
 }
 
 a{
@@ -62,4 +83,19 @@ a{
 section {
   height: 100vh;
   scroll-snap-align: center;
+}
+
+.testing{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+  }
+
 }
