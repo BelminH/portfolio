@@ -1,8 +1,11 @@
 import "./app.scss"
+import Navbar from "./components/navbar/navbar.jsx";
 
 const App = () => {
     return <div>
-        <section><a href="">Hello world</a></section>
+        <section>
+            <Navbar/>
+        </section>
         <section>Parllax-Effect</section>
         <section>Skills</section>
         <section>Parllax-Effect</section>
