@@ -5,18 +5,19 @@ import Sidebar from "./components/sidebar/sidebar.jsx";
 
 const App = () => {
     return <div>
-        <Sidebar/>
-        <section>
+        <section id="Homepage">
             <Navbar/>
         </section>
-        <section>Parllax-Effect</section>
+
+        <section id="Skills">Parllax-Effect</section>
         <section>Skills</section>
-        <section>Parllax-Effect</section>
+        <section id="Portfolio">Parllax-Effect</section>
         <section>Personal-Projects1</section>
         <section>Personal-Projects2</section>
+        <section id="Contact">Parllax-Effect</section>
         <section>Contact</section>
-{/*        <Test/>*/}
-    </div>;
+    </div>
+        ;
 };
 
 export default App;

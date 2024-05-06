@@ -1,8 +1,10 @@
 import "./navbar.scss";
+import Sidebar from "../sidebar/sidebar.jsx";
 
 
 const Navbar = () => {
     return <div className="navbar">
+        <Sidebar/>
         <div className="wrapper">
             <span className="span">Belmin Husanovic</span>
             <div className="socials">

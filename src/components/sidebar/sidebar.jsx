@@ -27,14 +27,14 @@ const Sidebar = () => {
         }
     }
 
-    return <motion.div className="sidebar" animate={isOpen ? "open" : "closed"}>
-        <motion.div className="bg" variants={variants}>
-            <Links/>
+    return (
+        <motion.div className="sidebar" animate={isOpen ? "open" : "closed"}>
+            <motion.div className="bg" variants={variants}>
+                <Links/>
+            </motion.div>
+            <Togglebtn isOpen={isOpen} setIsOpen={setIsOpen}/>
         </motion.div>
-        <Togglebtn isOpen={isOpen} setIsOpen={setIsOpen}/>
-
-    </motion.div>
-
+    );
 }
 
-export default Sidebar
+export default Sidebar;

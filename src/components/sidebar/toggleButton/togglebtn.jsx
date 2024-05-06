@@ -1,6 +1,12 @@
-const Togglebtn = ({setIsOpen}) => {
-    return <button onClick={() => setIsOpen((prev) => !prev)} className="toggle-btn">Button</button>
-
+const Togglebtn = ({ isOpen, setIsOpen }) => {
+    return (
+        <button
+            onClick={() => setIsOpen((prev) => !prev)}
+            className="toggle-btn"
+        >
+            {isOpen ? "Close" : "Open"}
+        </button>
+    );
 }
 
-export default Togglebtn
+export default Togglebtn;
